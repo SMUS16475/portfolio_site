@@ -1,0 +1,122 @@
+<!-- DEVELOPER: Emmanuel Chiobi, IS117-005, Fall 2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <h1 id="title">GAMING</h1>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    body {
+        background-color: rgb(32, 32, 32);
+    }
+
+    /* Styles for nav */
+
+    #title {
+        text-align: center;
+        color: white;
+    }
+
+    #nav_text {
+      color: white;
+    }
+
+    #nav_text:hover {
+      color: yellow;
+    }
+
+    .dropdown-item:hover {
+      color: red;
+    }
+
+    /* Other styles */
+
+    .text {
+      padding: 50px;
+      margin-right: 25px;
+      margin-top: 10px;
+    }
+
+    .float-right {
+      margin: 50px;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    h4 {
+      color: rgb(160, 160, 160);
+    }
+
+    h6 {
+      color: rgb(107, 107, 107);
+    }
+    
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<div>
+
+  <!--Navigation Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" id="nav_text" href="../home.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text" href="../bio.html">Bio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="nav_text" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Works
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="music.html">Music</a>
+                  <a class="dropdown-item">Gaming <span class="sr-only">(current)</span></a>
+                  <a class="dropdown-item" href="videos.html">Videos</a>
+                  <a class="dropdown-item" href="code.html">Code</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  
+  <!-- Gaming Video -->
+
+  <div id="doc" class="clearfix"> 
+    <video width="640" height="480" controls class="float-right">
+      <source src="../videos/doc clips (final).mp4" type="video/mp4">
+    </video>
+    <div class="text">
+      <h2>"doc clips"</h2>
+      <h4>A Super Smash Bros. Ultimate montage of me playing as Dr. Mario.</h4>
+      <h6>I have many separate recordings of me playing Super Smash Bros. Ultimate, a game I regularly play in a competitive way. So, I wanted to construct a video that showcases me playing as one of the main characters I play in the game.</h6>
+    </div>
+  </div>
+</body>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-center text-white">
+  <div class="text-center p-3">
+    ©2021 Emmanuel Chiobi | 
+    <a class="text-white" href="#">Terms of Service</a> | 
+    <a class="text-white" href="#">Privacy Policy</a>
+  </div>
+</footer>
+</html>

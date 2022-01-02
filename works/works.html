@@ -1,0 +1,132 @@
+<!-- DEVELOPER: Emmanuel Chiobi, IS117-005, Fall 2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <h1 id="title">WORKS</h1>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    body {
+        background-color: rgb(32, 32, 32);
+    }
+
+    /* Styles for nav */
+
+    #title {
+        text-align: center;
+        color: white;
+    }
+
+    #nav_text {
+      color: white;
+    }
+
+    #nav_text:hover {
+      color: yellow;
+    }
+
+    /* Styles for cards */
+
+    .card-title, .card-text {
+      color: white;
+    }
+    
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<body>
+
+  <!--Navigation Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" id="nav_text" href="../home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text" href="../bio.html">Bio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="nav_text" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Works <span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="music.html">Music</a>
+                  <a class="dropdown-item" href="gaming.html">Gaming</a>
+                  <a class="dropdown-item" href="videos.html">Videos</a>
+                  <a class="dropdown-item" href="code.html">Code</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+  <!-- Cards -->
+
+  <h1></h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card text-center bg-dark mb-3">
+          <div class="card-body">
+            <h5 class="card-title">MUSIC</h5>
+            <p class="card-text">A couple of music entries (compositions, instrumentals, mashups, etc.) done by the author of this site.</p>
+            <a href="music.html" class="btn btn-primary">Go</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-center bg-dark mb-3">
+          <div class="card-body">
+            <h5 class="card-title">GAMING</h5>
+            <p class="card-text">A video consisting of recorded gameplay done by the author of this site.</p>
+            <a href="gaming.html" class="btn btn-primary">Go</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card text-center bg-dark mb-3">
+          <div class="card-body">
+            <h5 class="card-title">VIDEOS</h5>
+            <p class="card-text">A silent film done by the author of this site.</p>
+            <a href="videos.html" class="btn btn-primary">Go</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-center bg-dark mb-3">
+          <div class="card-body">
+            <h5 class="card-title">CODE</h5>
+            <p class="card-text">A coding project showcased by the author of this site.</p>
+            <a href="code.html" class="btn btn-primary">Go</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-center text-white">
+  <div class="text-center p-3">
+    ©2021 Emmanuel Chiobi | 
+    <a class="text-white" href="#">Terms of Service</a> | 
+    <a class="text-white" href="#">Privacy Policy</a>
+  </div>
+</footer>
+</html>

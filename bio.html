@@ -1,0 +1,110 @@
+<!-- DEVELOPER: Emmanuel Chiobi, IS117-005, Fall 2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio</title>
+    <h1 id="title">BIO</h1>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    body {
+        background-color: rgb(32, 32, 32);
+    }
+
+    /* Styles for nav */
+
+    #title {
+        text-align: center;
+        color: white;
+    }
+
+    #nav_text {
+      color: white;
+    }
+
+    #nav_text:hover {
+      color: yellow;
+    }
+
+    .dropdown-item:hover {
+      color: red;
+    }
+
+    /* Other styles */
+
+    #da_text {
+      color: white;
+    }
+
+    body img {
+      width: 250px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 25px;
+    }
+
+    .clearfix {
+      padding: 50px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<body>
+
+  <!--Navigation Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" id="nav_text" href="home.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text">Bio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="nav_text" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Works
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./works/music.html">Music</a>
+                  <a class="dropdown-item" href="./works/gaming.html">Gaming</a>
+                  <a class="dropdown-item" href="./works/videos.html">Videos</a>
+                  <a class="dropdown-item" href="./works/code.html">Code</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+  <!-- Biography (with pictures) -->
+
+  <div class="clearfix">
+    <img src="./images/photos/20211030_200747.jpg" alt="Picture of me" class="float-left">
+    <p id="da_text"><strong>Emmanuel Obiora</strong> (oh-bee-are-uh) <strong>Chiobi</strong> (chi-oh-bee) <strong>Jr.</strong> is a 21 year old African-American music, film and game enthusiast who has interests in graphic design, competitive gaming, filmmaking, music production, and web / app development. He currently attends the New Jersey Institute of Technology (NJIT) as a third-year Computer Engineering student (planning on switching majors to Information Technology with a minor in Computer Science). After college, he wishes to pursue a career in full-stack development.</p>
+    <img src="./images/photos/20210513_124324_(2).jpg" alt="Picture of me" class="float-right">
+    <p id="da_text">Born on May 16<sup>th</sup>, 2000, he was raised alongside two older sisters primarily in Union Township, Union County, New Jersey. Going to regular public schools within the area, he initially developed an interest in artwork, believing he would pursue a career as an illustrator. After being exposed to video games and computers, he started to stray away from wanting to be an illustrator and focused more on technology. Now, he develops small coding projects to let the time go by. Along with that, he works on content that he can publish online.</p>
+  </div>
+</body>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-center text-white">
+  <div class="text-center p-3">
+    ©2021 Emmanuel Chiobi | 
+    <a class="text-white" href="#">Terms of Service</a> | 
+    <a class="text-white" href="#">Privacy Policy</a>
+  </div>
+</footer>
+</html>

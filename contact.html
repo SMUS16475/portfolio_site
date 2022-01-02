@@ -1,0 +1,186 @@
+<!-- DEVELOPER: Emmanuel Chiobi, IS117-005, Fall 2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <h1 id="title">CONTACT</h1>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    body {
+        background-color: rgb(32, 32, 32);
+    }
+
+    /* Styles for nav */
+
+    #title {
+        text-align: center;
+        color: white;
+    }
+
+    #nav_text {
+      color: white;
+    }
+
+    #nav_text:hover {
+      color: yellow;
+    }
+
+    .dropdown-item:hover {
+      color: red;
+    }
+
+    /* Styles for contact form */
+
+    #contact {
+      color: white;
+    }
+
+    form {
+      padding: 20px;
+    }
+
+    /* Other styles */
+
+    #other {
+      color: white;
+      text-align: center;
+    }
+
+    #discord img {
+      width: 80px;
+      max-width: 80px;
+      margin-left: 100px;
+      position: relative;
+    }
+
+    #instagram img {
+      width: 200px;
+      margin-left: 45px;
+    }
+
+    #linkedin img {
+      width: 80px;
+      margin-left: 110px;
+    }
+
+    /* .social {
+      margin-left: 100px;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      position: static;
+    } */
+
+    .social h2 {
+      color: white;
+      text-align: center;
+      margin-right: 100px;
+      padding-top: 4%;
+    }
+
+    .social #instagram h2 {
+      margin-left: 
+    }
+
+    .social a {
+      color: white;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<body>
+
+  <!--Navigation Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" id="nav_text" href="home.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text" href="bio.html">Bio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="nav_text" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Works
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./works/music.html">Music</a>
+                  <a class="dropdown-item" href="./works/gaming.html">Gaming</a>
+                  <a class="dropdown-item" href="./works/videos.html">Videos</a>
+                  <a class="dropdown-item" href="./works/code.html">Code</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav_text">Contact <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+  <!-- Contact Form -->
+
+  <form>
+    <div class="form-group">
+      <label for="firstName" id="contact" class="new_form">First name</label>
+      <input type="name" class="form-control" id="firstName" aria-describedby="newName" placeholder="Enter first name" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName" id="contact">Last name</label>
+      <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="newName" placeholder="Enter last name" required> 
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1" id="contact">Email address</label>
+      <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1" id="contact">Check me out</label>
+    </div>
+    <h1></h1>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <h2 id="other">Otherwise...</h2>
+  <h4 style="padding-bottom: 20px" id="other">Check out my social media accounts!</h4>
+  <div class="social">
+    <div id="discord" class="clearfix">
+      <img src="./images/discord-logo.png" alt="Discord logo" class="float-left">
+      <h2>Discord: SMUS16475#9421</h2>
+    </div>
+  </div>
+  <div class="social">
+    <div id="instagram" class="clearfix">
+      <img src="./images/instagram logo bg.png" alt="Discord logo" class="float-left">
+      <h2>Instagram: <a href="https://www.instagram.com/da_emancipator/">@da_emancipator</a></h2>
+    </div>
+  </div>
+  <div class="social">
+    <div id="linkedin" class="clearfix">
+      <img src="./images/linkedin_logo.png" alt="Discord logo" class="float-left">
+      <h2>LinkedIn: <a href="https://www.linkedin.com/in/emmanuelchiobi/">Emmanuel Chiobi</a></h2>
+    </div>
+  </div>
+  <div style="padding-bottom: 30px"></div>
+</body>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-center text-white">
+  <div class="text-center p-3">
+    ©2021 Emmanuel Chiobi | 
+    <a class="text-white" href="#">Terms of Service</a> | 
+    <a class="text-white" href="#">Privacy Policy</a>
+  </div>
+</footer>
+</html>
